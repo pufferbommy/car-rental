@@ -67,9 +67,7 @@ class _MainScreenState extends State<MainScreen> {
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('Hi, ' +
-                    ((username![0].toUpperCase() + username!.substring(1)) ??
-                        '')),
+                Text('Hi, $username'),
                 const SizedBox(
                   width: 24,
                 ),
