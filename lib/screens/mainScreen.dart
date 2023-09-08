@@ -24,6 +24,20 @@ class _MainScreenState extends State<MainScreen> {
   late final List<Widget> _pages;
 
   @override
+  void initState() {
+    super.initState();
+    _pages = <Widget>[
+      CatalogsScreen(
+        uID: '',
+      ),
+      BookingScreen(
+        uID: '',
+      ),
+      AboutScreen(),
+    ];
+  }
+
+  @override
   void didChangeDependencies() async {
     super.didChangeDependencies();
 
